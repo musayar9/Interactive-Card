@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 'Space Grotesk', sans-serif;
+}
+
+body{
+    background-image: url("images/bg-main-mobile.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    height: 100vh;
+    font-size: 18px;
+}
+
+.cardBack{
+    background-image: url("images/bg-card-back.png");
+   background-repeat: no-repeat;
+   background-size: 100%;
+   z-index: -1;
+   width: 250px;
+   height: 150px;
+   position: relative;
+   margin-top: 60px;
+   margin-left: 70px;
+
+}
+
+.backNumber{
+    position: absolute;
+    margin-top: 57px;
+    margin-left: 190px;
+    color: #fff;
+    font-size: 12px;
+
+
+}
+
+
+
+.frontCard{
+    background-image: url("images/bg-card-front.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 250px;
+    height: 150px;
+    margin-left: 30px;
+    margin-top: -60px;
+    position: relative;
+}
+
+
+.cardCircle{
+    display: flex;
+    align-items: center;
+padding: 10px;
+    
+}
+
+.bigCircle{
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.smallCircle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin-left: 12px;
+}
+.cardNumDetails{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+  
+}
+.cardNum{
+    font-size: 18px;
+}
+.personName{
+display: flex;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 2px;
+  
+}
+.cardDetails{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.cardDate{
+    color: #fff;
+    font-size: 12px;
+}
+
+.cardForm, .cardFooter, .row{
+    display: flex;
+    align-items: center;
+ flex-direction: column;
+    
+}
+
+#cardName, #cardNumber{
+    width: 300px;
+    height: 45px;
+    padding: 12px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    color: 16px;
+    margin: 5px;
+    outline: none;
+}
+.dateMonth{
+    display: inline-flex;
+}
+.Cvc{
+    margin-left: 90px;
+}
+.cvcİnput{
+    margin-left: 220px;
+    margin-top: -15px;
+    display: none;
+}
+
+#mm, #yy{
+    width: 80px;
+    height: 40px;
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    margin: 5px;
+}
+#cvc{
+    width: 120px;
+    height: 40px;
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    margin: 5px;
+ 
+}
+
+.error-message, .name-error, .errorNumber{
+  
+    font-size:12px;
+    font-weight: 700;
+    color: hsl(0, 100%, 66%);
+
+}
+
+.name-error{
+    display: none;
+}
+.errorNumber{
+    display: none;
+}
+
+.yearMonth{
+    display: none;
+}
+.errorinput{
+    border-color: hsl(0, 100%, 66%);
+
+}
+
+#confirm, #continue{
+    cursor: pointer;
+    width: 350px;
+    height: 40px;
+    border-radius: 12px;
+    border:1px solid hsl(270, 3%, 87%);
+    color: #fff;
+    background-color: hsl(278, 68%, 11%);
+    outline: none;
+    margin-top: 15px;
+
+}
+
+label{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#cardNumber:focus, #cardName:focus, #mm:focus,#yy:focus,#cvc:focus{
+    border: 1px solid hsl(278, 68%, 11%);
+}
+
+
+.cardFooter{
+    display: none;
+}
+
+
+@media screen and (min-width:374px){
+    body{
+        background-image: url("images/bg-main-desktop.png");
+        background-position: left;
+        overflow:hidden;      
+    }
+    .cardBack{
+        width: 320px;
+        height: 200px;
+        top:370px;
+        left:200px;
+    }
+    .backNumber{
+        font-size: 15px;
+        padding-left: 60px;
+        margin-top: 78px;
+        font-size: 16px;
+    }
+
+    .frontCard{
+        width: 320px;
+        height: 200px;
+        top:20px;
+        left:180px;
+    }
+    .cardCircle{
+
+        padding: 14px;
+            
+        }
+        
+        .bigCircle{
+            width:30px;
+            height: 30px;
+     
+        }
+
+    .smallCircle{
+        width: 20px;
+        height: 20px;
+       
+    }
+
+    .cardNum{
+        font-size: 20px;
+    }
+    .personName{
+      font-size: 16px;
+    }
+
+    .cardDate{
+        font-size: 16px;
+    }
+.cardForm{
+    display: flex;
+    align-items: center;
+flex-direction: column;
+position: relative;
+bottom:200px;
+ padding-left: 300px;
+
+    
+}
+
+.cardFooter{
+position: relative;
+ padding-left: 700px;
+ bottom: 200px;
+}
+
+img{
+   display: flex;
+   align-items: center;
+   padding-left: 120px;
+}
+#thanks{
+    display: flex;
+    padding-left: 90px;
+    margin-top: 10px;
+}
+#thanksMessage{
+    display: flex;
+    padding-left: 80px;
+    margin-top: 10px;
+}
+
+.cardFooter{
+    display: none;
+}
+
+.attribution{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    margin-top: -180px;
+   margin-left: 300px;
+}
+
+#confirm, #continue{
+    width: 380px;
+    height: 50px;
+}
+#mm, #yy{
+    width: 100px;
+    height: 44px;
+
+}
+#cvc{
+    width: 140px;
+    height: 44px;
+    
+}
+#cardName, #cardNumber{
+    width: 350px;
+    height: 44px;
+   
+}
+
+
+}

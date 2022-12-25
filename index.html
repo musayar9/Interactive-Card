@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="cards">
+    <div class="cardBack">
+      <div class="backNumber">000</div>
+    </div>
+    <div class="frontCard">
+      <div class="cardCircle">
+        <div class="bigCircle"></div>
+        <div class="smallCircle"></div>
+      </div>
+      <div class="cardİnformation">
+
+        <div class="cardNumDetails">
+          <p class="cardNum"> 0000 0000 0000 0000</p>
+        </div>
+        <div class="cardDetails">
+          <p class="personName">Jane Applessed</p>
+          <p class="cardDate"><span class="month">00</span>/ <span class="year">00</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="cardForm">
+      <div class="mb-3 inputName">
+        <label for="cardName" class="form-label">CARDHOLDER NAME</label>
+        <input type="text" class="form-control" id="cardName" placeholder=" e.g. Jane Appleseed">
+        <div class="name-error">Wrong Format, Name's area is empty</div>
+      </div>
+      <div class="inputNum">
+        <label for="cardNumber" class="form-label">CARD NUMBER</label>
+        <input id="cardNumber" type="text" class="form-control" placeholder="e.g. 1234 5678 9123 0000">
+        <div class="errorNumber">Wrong format, number only</div>
+      </div>
+
+      <div class="row">
+        <div class="monthDate ms-2"> <label for="dateMonth" class="form-label">Exp. Date (MM/YY) </label> <label
+            for="cvc" class="Cvc" class="form-label"> Cvc</label></div>
+        <div class="col dateMonth">
+
+          <input type="number" id="mm" class="form-control" placeholder="mm">
+          <input type="number" id="yy" class="form-control " placeholder="yy">
+          <input type="number" id="cvc" class="form-control" placeholder="cvc">
+
+
+        </div>
+        <div class="error-message">
+          <span class="yearMonth">Can't be blank</span>
+          <span class="cvcİnput">Cant't be blank</span>
+        </div>
+
+        <button id="confirm">Confirm</button>
+      </div>
+    </div>
+    <div class="cardFooter">
+
+      <img src="images/icon-complete.svg">
+      <h3 id="thanks">Thank You!</h3>
+      <p id="thanksMessage">We've added your card details</p>
+
+      <button id="continue">Continue</button>
+    </div>
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
